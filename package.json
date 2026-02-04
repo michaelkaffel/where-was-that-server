@@ -1,6 +1,5 @@
 {
   "name": "server",
-  "type": "module",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -9,5 +8,9 @@
   },
   "author": "Michael Kaffel",
   "license": "ISC",
-  "description": "The backend server for the Where Was That website and react-native app."
+  "description": "The backend server for the Where Was That website and react-native app.",
+  "dependencies": {
+    "express": "^5.2.1",
+    "morgan": "^1.10.1"
+  }
 }
