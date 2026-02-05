@@ -11,7 +11,7 @@ campsiteRouter.route('/')
     res.end('A JSON representation of an array of campsite objects will be returned from this endpoint');
 })
 .post((req, res) => {
-    res.end(`This endpoint will accept a JSON representation of campsite object to add to the database. Campsite name: ${req.body.title}. Campsite description: ${req.body.description}`);
+    res.end(`This endpoint will accept a JSON representation of a campsite object to add to the database. Campsite name: ${req.body.title}. Campsite description: ${req.body.description}`);
 })
 .put((req, res) => {
     res.statusCode = 403;
@@ -43,7 +43,7 @@ campsiteRouter.route('/:campsiteId')
     res.end(`This endpoint is for toggling the favorite value of a campsite with Id: ${req.params.campsiteId}`);
 })
 .delete((req, res) => {
-    res.end(`This endpoit will delete campsite with Id ${req.params.campsiteId}`);
+    res.end(`This endpoint will delete campsite with Id ${req.params.campsiteId}`);
 });
 
 module.exports = campsiteRouter;
